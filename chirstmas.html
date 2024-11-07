@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣诞树</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        body{
+            background-color:black;
+        }
+        h1{
+            text-align:center;
+            text-decoration: antiquewhite;
+            text-indent: 2%;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(130, 198, 238);
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgb(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>陈诗涵 Merry Chistmas!</h1>
+    <div>
+        <video id='myvedio'style="width: 50%;" autoplay loop src="./tree.mp4" muted></video>
+    </div>
+    <script>
+        const video=document.getElementById('myvideo');
+        video.addEventListener('click',function(){
+            this.play();
+        })
+    </script>
+</body>
+</html>
